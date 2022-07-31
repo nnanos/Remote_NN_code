@@ -22,21 +22,40 @@
                 //TRAINING 
                 "args": [ 
                     
+                    // "--dataset" , 
+                    // "aligned",
+
+                    // "--input-file", 
+                    // "mixture.wav", 
+                    // "--output-file", 
+                    // "vocals.wav",
+
+
                     "--root" , 
-                    "/home/nnanos/musdb18_wav",
+                    //"/media/nnanos/Windows/musdb_wav_small",
+                    "/home/nnanos/Desktop/musdb_wav_small",
+                    //"/mnt/ramdisk",
                     "--is-wav",
+                    //"/home/nnanos/Desktop/musdb_wav_small_alligned_vocals",
+
                     
             
                     "--target", 
                     "vocals",
                     // "--epochs", 
+                    // "1000",
+                    // "--output" ,
+                    // "open_unmix_test_vocals_full",
+                    // "--batch-size",
                     // "2",
-                    "--output" ,
-                    "open_unmix_test_vocals_full",
-                    "--batch-size",
-                    "32",
-                    "--nb-workers",
-                    "5"
+                    // "--nb-workers",
+                    // "4",
+
+                    "--seq-dur",
+                    "6",
+
+                    // "--random-track-mix",
+                    // "false"
                     //"--no-cuda"
                 ]
 
