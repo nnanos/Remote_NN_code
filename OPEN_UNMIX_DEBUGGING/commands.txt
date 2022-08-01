@@ -1,0 +1,9 @@
+
+conda env create -n source-sep -f environment.yml
+
+
+sudo mount -t tmpfs -o rw,size=5G tmpfs /home/nnanos/ramdisk
+cp -r /media/nnanos/CC005DEA005DDBD0/musdb18_wav_small/train ~/ramdisk
+
+
+python data.py --root /home/nnanos/ramdisk --is-wav --target vocals
